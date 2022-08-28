@@ -75,7 +75,7 @@ namespace File_to_folder
             int n = 0;
              foreach (string s in listBox1.Items)
                 {
-                    System.IO.File.Move(s, textBox1.Text + @"\" + System.IO.Path.GetFileName(s) + n.ToString());                    
+                    System.IO.File.Move(s, textBox1.Text + @"\" + n.ToString() + System.IO.Path.GetFileName(s));                    
                     n++;
                 }
 
